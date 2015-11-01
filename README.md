@@ -12,10 +12,12 @@ scripts directory.
 When the script is installed it will provide a menu item under `file > scripts`
 Selecting the menu item will prompt you to select a directory containing an
 unzipped Planet order. (Orders can be generated using the
-[Scenes Explorer](https://www.planet.com/scenes))
+[Scenes Explorer](https://www.planet.com/scenes)).
+
 If your order contains `analytic` scenes, you may (optionally) provide
 a curves file in Photoshop `.acv` format which will be applied to all
 analytic scenes in the order.
+
 Once the script is done, it will produce a 16bit file as large as the
 bounding box of all scenes contained in the order. Each scene will be
 placed in its appropriate position within the bounding box.
