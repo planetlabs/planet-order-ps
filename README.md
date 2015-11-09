@@ -18,14 +18,30 @@ If your order contains `analytic` scenes, you may (optionally) provide
 a curves file in Photoshop `.acv` format which will be applied to all
 analytic scenes in the order.
 
-Once the script is done, it will produce a 16bit file as large as the
-bounding box of all scenes contained in the order. Each scene will be
-placed in its appropriate position within the bounding box.
+If your order contains both `analytic` and `visual` scenes, the `analytic` version will be used. If neither is available, the script will fail.
 
-### License
+Once the script is done, it will produce a Photoshop document (16 bit per channel) as large as the bounding box of all scenes contained in the order. Each scene will be placed in its appropriate position within the bounding box.
 
-© Planet Labs, Inc.
+## Limitations
 
-Licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0) (the "License"); you may not use this file except in compliance with the License.
+### Mixed UTM zones
+If there are scenes in the order that belong to different UTM zones the script will fail while trying to generate a file that is too large, or produce misaligned scenes.
 
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See [the License](http://www.apache.org/licenses/LICENSE-2.0) for the specific language governing permissions and limitations under the License.
+### Maximum number of scenes
+The script has been tested in Photoshop CC with a maximum of 10 scenes. It will likely work with more, but will be limited by the resources available on the system it's running on.
+
+## License
+
+© 2015 Planet Labs, Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
