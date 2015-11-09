@@ -22,6 +22,10 @@ If your order contains both `analytic` and `visual` scenes, the `analytic` versi
 
 Once the script is done, it will produce a Photoshop document (16 bit per channel) as large as the bounding box of all scenes contained in the order. Each scene will be placed in its appropriate position within the bounding box.
 
+## Projection
+
+Scenes downloaded in a Planet Labs order are projected in WSG 84 / UTM. The scenes are not reprojected during the process.
+
 ## Limitations
 
 ### Mixed UTM zones
